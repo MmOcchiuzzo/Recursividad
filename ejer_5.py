@@ -9,4 +9,8 @@ def romano_a_decimal(num_romano):
         decimal+=valores[num_romano[i]]-2*[num_romano[i-1]]
        else:
         decimal+=valores[num_romano[i]]
-    return ("El valor decimal del número romano es:"), decimal
+    return decimal
+
+num_r = "MMMCCXXIV"
+num_d = romano_a_decimal(num_r)
+print("El número decimal es",num_d)
